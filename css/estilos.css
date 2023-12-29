@@ -1,0 +1,360 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: sans-serif;
+}
+
+img{
+    max-width: 100vw;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header {
+    height: 140px;
+    padding: 40px;
+}
+
+
+.brillante{
+    filter: brightness(1.3);
+}
+
+.texto_pequenio{
+    font-size: .8rem;
+}
+
+.offcanvas{
+    background-color: #00da11;
+}
+
+.triangulo{
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background-color: #FFF;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -3px;
+    left: -6px;
+}
+.inicio_img{
+    width: 100vw;
+    height:56vw;
+    background-image: url("../imagenes/inicio_img.jpg");
+    background-size: 100%;
+}
+
+.nav-link{
+    color: #FFF;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.titulo{
+    font-weight: 1600;
+    font-size: 1.5rem;
+    color: #000;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.descripcion{
+    background:rgb(245, 255, 245);
+    border-left: 4px solid rgb(88, 230, 67);
+    border-top: 4px solid rgb(88, 230, 67);
+    border-right: 4px solid rgb(88, 150, 67);
+    border-bottom: 4px solid rgb(88, 150, 67);
+    border-radius: 10px;
+    box-shadow: 6px 8px 3px 0px rgb(0,90,0);
+    max-width:550px;
+    font-size: 1.25rem;
+    padding: 3vw 3vh;
+   
+    opacity: .85;
+    margin: 0px 5vw 0px 2vw;
+    
+}
+
+.fondo_verde{
+    background-color: #30ff42;
+    border: 3px solid #ccc;
+
+}
+
+.fondo_verde:hover{
+    transform: scale(1.1);
+    background-color: #00ea11;
+    transition: transform .5s, background-color .5s;
+}
+
+.carta{
+    width: 298px;
+    height: 378px;
+    position:relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+}
+
+.giro:hover>.carta{
+    transform: rotateY(180deg);
+}
+
+.frente, .fondo{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #000;
+    border-radius: 10%;
+}
+
+.frente{
+    background-size: 100%;
+}
+
+.frente_titulo{  
+    display: inline-block;
+    background-color: white;
+    margin: 15px;
+    padding: 2px 6px;
+    transform:skewX(-30deg);
+    border: 2px solid #000;
+}
+
+.frente_titulo > .titulo{
+    transform:skewX(20deg);
+    margin: 0;
+}
+
+.frente_icono{
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+}
+
+.fondo{
+    position:absolute;
+    top:0;
+    transform: rotateY(180deg);
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../imagenes/logo_pequeño.jpg);
+    background-size: cover;
+    
+}
+.justificado{
+    text-align: justify;
+
+}
+
+.presion{
+    background-image: url(../imagenes/Presion.jpg);
+}
+
+.electricidad{
+    background-image: url(../imagenes/Electricidad.jpg);
+}
+
+.temperatura{
+    background-image: url(../imagenes/Temperatura.jpg);
+}
+
+.dimensional{
+    background-image: url(../imagenes/Dimensional.jpg);
+}
+
+.masa{
+    background-image: url(../imagenes/Masa.jpg);
+}
+
+.ph{
+    background-image: url(../imagenes/Ph.jpg);
+}
+
+.conductividad{
+    background-image: url(../imagenes/Conductividad.jpg);
+}
+
+@media only screen and (min-width: 1200px) {
+    
+.inicio_img{
+    position: relative;
+    top: -35px;
+}
+    .contacto{
+        background-color: #fff; 
+        margin-left: auto;
+    }
+    
+    .contacto a{
+        color: #00da11;
+    }
+    
+    .contacto a:hover{
+        color: #009900;
+        cursor: pointer;
+    }
+
+    
+    .fondo_cambiante{
+        background-color: #00da11!important;
+    
+    }
+
+    .nav-link{
+        font-size: 1.2rem;
+    }
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .separacion{
+                border-top: 2px solid lightgrey;
+                padding-top: 40px;
+                margin-left: 10px;
+        }
+        .descripcion{
+            font-size: .75rem;
+        }
+    }
+    
+    .altura{
+        top: -30px;
+        min-height: 330px;
+    }
+
+    .iso, .sencamer, .samh{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 40%;
+        max-width: 300px;
+        opacity: 0;
+        animation:  anitrans 15s linear infinite;
+    }
+
+    .sencamer{
+        animation-delay: 5s;
+    }
+    
+    .samh{
+        animation-delay: 10s;
+    }
+    
+    @keyframes anitrans {
+        8%{
+            opacity: 1;
+        }
+    
+        25%{
+            opacity:1;
+        }
+    
+        33%{
+            opacity: 0;
+        }
+    
+        100%{
+            opacity:0;
+        }
+    }
+
+    .mapa{
+        width: 90vw;
+        max-width: 1300px;
+        height: 500px;
+        border: 0;
+        margin: auto;
+        
+        
+    }
+
+    .contactanos{
+        width: 90vw;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .enlace_contacto{
+        font-size: 1.25rem;
+        margin: 0;
+        color: #00dd00;
+        text-decoration: none;
+    }
+
+    .enlace_contacto:hover{
+        color: #333;
+    }
+
+    .servicio_rectangulo{  
+        flex-shrink: 0;  
+        display: flex;
+        align-items: center;
+        background-color: #00da11;
+        width: 118px;
+        height: 25px;
+        font-size: .9rem;
+        padding-right: 3px;
+        position: relative;
+        left: 133px;
+        animation: animov 35s linear infinite;
+        
+    }
+
+    .servicio_triangulo{
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        background-color: #00da11;
+        width: 25px;
+        height: 25px;
+    }
+
+    .segundo{
+        animation-delay: 5s;
+    }
+
+    .tercero{
+        animation-delay: 10s;
+    }
+
+    .cuarto{
+        animation-delay: 15s;
+    }
+
+    .quinto{
+        animation-delay: 20s;
+    }
+
+    .sexto{
+        animation-delay: 25s;
+    }
+
+    .septimo{
+        animation-delay: 30s;
+    }
+
+    @keyframes animov {
+        3.57%{
+            left: 3px;
+        }
+    
+        10.71%{
+            left: 3px;
+        }
+    
+        14.28%{
+            left: 133px;
+        }
+    
+        100%{
+            left: 133px;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .servicio_rectangulo{
+            display: none;
+        }
+    }
