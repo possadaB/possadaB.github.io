@@ -44,7 +44,7 @@ header {
 .inicio_img{
     width: 100vw;
     height:56vw;
-    background-image: url("../imagenes/inicio_img.jpg");
+    background-image: url("../imagenes/inicio_img.webp");
     background-size: 100%;
 }
 
@@ -139,7 +139,7 @@ header {
     position:absolute;
     top:0;
     transform: rotateY(180deg);
-    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../imagenes/logo_pequeño.jpg);
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../imagenes/logo_pequeño.webp);
     background-size: cover;
     
 }
@@ -149,31 +149,31 @@ header {
 }
 
 .presion{
-    background-image: url(../imagenes/Presion.jpg);
+    background-image: url(../imagenes/Presion.webp);
 }
 
 .electricidad{
-    background-image: url(../imagenes/Electricidad.jpg);
+    background-image: url(../imagenes/Electricidad.webp);
 }
 
 .temperatura{
-    background-image: url(../imagenes/Temperatura.jpg);
+    background-image: url(../imagenes/Temperatura.webp);
 }
 
 .dimensional{
-    background-image: url(../imagenes/Dimensional.jpg);
+    background-image: url(../imagenes/Dimensional.webp);
 }
 
 .masa{
-    background-image: url(../imagenes/Masa.jpg);
+    background-image: url(../imagenes/Masa.webp);
 }
 
 .ph{
-    background-image: url(../imagenes/Ph.jpg);
+    background-image: url(../imagenes/Ph.webp);
 }
 
 .conductividad{
-    background-image: url(../imagenes/Conductividad.jpg);
+    background-image: url(../imagenes/Conductividad.webp);
 }
 
 @media only screen and (min-width: 1200px) {
