@@ -18,6 +18,12 @@ header {
     padding: 40px;
 }
 
+.logo{
+    width: 228px;
+    height: 84px;
+    position: relative;
+    top: -10px;
+}
 
 .texto_pequenio{
     font-size: .8rem;
@@ -48,6 +54,11 @@ header {
     color: #FFF;
     font-weight: 700;
     font-style: italic;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.nav-link:hover{
+    text-shadow: none;
 }
 
 .titulo{
@@ -178,10 +189,12 @@ header {
     .contacto{
         background-color: #fff; 
         margin-left: auto;
+        border-radius: 10px;
     }
     
     .contacto a{
         color: #007c3a;
+        text-shadow: none;
     }
     
     .contacto a:hover{
