@@ -193,9 +193,10 @@ header {
     position: absolute;
     z-index: -100;
     width: 100%;
-    height: 100%;
+    max-width: 100vw;
+    height: 450px;
     object-fit: cover;
-    filter: bright(.5), blur(4px);
+    filter: brightness(0.3);
 
 }
 
