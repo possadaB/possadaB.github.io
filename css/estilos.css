@@ -205,19 +205,21 @@ header {
 }
 
 .targeta{
-    background:#fff;
-   border-left: 4px solid #007c3a;
-    border-top: 4px solid #007c3a;
-    border-right: 4px solid #005c3a;
-    border-bottom: 4px solid #005c3a;
-    border-radius: 10px;
-
     opacity: .8;
     width: 70%;
     padding: 10px;
     margin: 20px 20% 20px 10%;
 }
 
+.targeta h5{
+	color:#fff
+	text-shadow:3px 3px 3px #000
+}
+
+.targeta p{
+	color:#fff
+	text-shadow:1px 1px 1px #000
+}
 @media only screen and (min-width: 1200px) {
     
 .inicio_img{
@@ -414,7 +416,6 @@ header {
 
         .targeta h5{
             font-size: .90rem;
-            color: #000;
         }
 
         .targeta p{
