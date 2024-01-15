@@ -208,11 +208,13 @@ header {
 }
 
 .targeta h5{
+	font-size:1.6rem
 	color:#fff;
 	text-shadow:3px 3px 3px #000;
 }
 
 .targeta p{
+	font-size:1.1rem
 	color:#fff;
 	text-shadow:1px 1px 1px #000;
 }
@@ -405,23 +407,15 @@ header {
             max-height: 300px;
         }
 
-        .targeta{
-            width: 90%;
-            margin: 10px 7% 10px 3%;
-        }
-
         .targeta h5{
-            font-size: .90rem;
+            font-size: 1.2rem;
         }
 
         .targeta p{
-            font-size: .75rem;
+            font-size: .9rem;
         }
 
-        .carousel-control-prev, .carousel-control-next{
-            top:unset;
-            bottom: 20px;
-        }
+
 
         .moviz{
             position: relative;
