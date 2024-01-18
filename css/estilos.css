@@ -98,14 +98,27 @@ header {
     transition: transform .5s, background-color .5s;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    margin: 20px 5vw 20px 5vw;
+    gap: 70px;
+}
+
+.grid div{
+    max-width: 90vw;
+}
+
 .img-servicio{
 	width:60vw;
 	max-width:300px;
 	height:50vw;
 	max-height:250px;
 	object-fit:cover;
-	margin:10px 0 70px 0;
 	border: 2px solid #005c3a;
+    margin-top: auto;
+    flex-grow: 1;
+    align-self: center;
 }
 
 .carta{
@@ -269,7 +282,7 @@ header {
                 margin-left: 10px;
         }
         .descripcion{
-            font-size: .75rem;
+            font-size: .7rem;
             max-width:550px;
         }
     }
@@ -345,20 +358,6 @@ header {
         color: #333;
     }
 
-    .servicio_rectangulo{  
-        flex-shrink: 0;  
-        display: flex;
-        align-items: center;
-        background-color: #007c3a;
-        width: 118px;
-        height: 25px;
-        font-size: .9rem;
-        padding-right: 3px;
-        position: relative;
-        left: 133px;
-        animation: animov 35s linear infinite;
-        
-    }
 
     .servicio_triangulo{
         clip-path: polygon(0 0, 0% 100%, 100% 50%);
@@ -391,28 +390,10 @@ header {
         animation-delay: 30s;
     }
 
-    @keyframes animov {
-        3.57%{
-            left: 3px;
-        }
-    
-        10.71%{
-            left: 3px;
-        }
-    
-        14.28%{
-            left: 133px;
-        }
-    
-        100%{
-            left: 133px;
-        }
-    }
+
 
     @media only screen and (max-width: 576px) {
-        .servicio_rectangulo{
-            display: none;
-        }
+
 
         .carrusel{
             margin-bottom: 0;
