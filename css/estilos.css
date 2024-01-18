@@ -99,12 +99,13 @@ header {
 }
 
 .img-servicio{
-	width:40vw;
-	max-width:400px;
-	height:20vw;
+	width:60vw;
+	max-width:300px;
+	height:40vw;
 	max-height:200px;
 	object-fit:cover;
-	margin:0 auto 20px;
+	margin:0 0 20px 10vw;
+	border: 2px solid #005c3a;
 }
 
 .carta{
